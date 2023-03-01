@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests\Tags;
 
-use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateTagRequest extends FormRequest

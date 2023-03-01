@@ -10,7 +10,7 @@ class DeleteTagController extends Controller
 {
     public function __invoke(Teg $teg)
     {
-        $teg -> delete();
-        return redirect() -> route('index');
+        $teg->delete();
+        return redirect()->route('index');
     }
 }

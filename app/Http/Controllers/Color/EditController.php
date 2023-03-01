@@ -10,6 +10,6 @@ class EditController extends Controller
 {
     public function __invoke(Color $color)
     {
-        return view('colors/edit_color', compact('color'));
+        return view('colors.edit_color', compact('color'));
     }
 }

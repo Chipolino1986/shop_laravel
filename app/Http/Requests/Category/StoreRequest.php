@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Category;
 
-use Illuminate\Contracts\Validation\Rule;
+use App\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreRequest extends FormRequest

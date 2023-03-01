@@ -11,5 +11,6 @@ class EditController extends Controller
     public function __invoke(User $user)
     {
         return view('users.edit_user', compact('user'));
+//        return view('users.edit_user', ['user'=>$user]);
     }
 }

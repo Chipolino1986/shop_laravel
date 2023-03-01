@@ -11,12 +11,12 @@ class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
-//        $data = $request->validated();
+        $data = $request->validated();
 
-        $data = $request->toArray();
+//        $data = $request->toArray();
         User::firstOrCreate([
             'email'=>$data['email']
         ],$data);
-        return redirect()->route('index');
+        return redirect()->route('user.index');
     }
 }
